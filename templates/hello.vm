@@ -1,0 +1,16 @@
+Hello $name!
+
+#set ($name2 = "Alma")
+
+Hello $name2
+
+<ul>
+
+#foreach($book in $books)
+    #set ($fact = $book.fact())
+    <li>
+        $fact $fact.length()
+    </li>
+#end
+
+</ul>
